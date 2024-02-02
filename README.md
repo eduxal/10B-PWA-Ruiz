@@ -1,5 +1,7 @@
 # 10B-PWA-Ruiz
 
-Nombre: Ruiz Alvaerz Jose Eduardo
+Nombre: Ruiz Alvarez Jose Eduardo
+
 Materia: PWA
+
 Grupo: 10B
