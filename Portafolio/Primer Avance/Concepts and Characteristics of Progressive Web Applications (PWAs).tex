@@ -1,0 +1,216 @@
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[left=2.00cm, right=2.50cm, top=2.50cm, bottom=2.00cm]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{1.0pt}
+\pagestyle{fancy}
+\date{}
+
+\begin{document}
+
+\hypersetup{
+ pdfauthor={Eduardo Ruiz},
+ pdftitle={Concepts and Characteristics of Web and Service-Oriented Applications, Native and Cross-Platform Applications, and PWAs},
+ pdfkeywords={PWA},
+ pdfsubject={PWAs},
+ pdfcreator={Emacs 26.2 (Org mode 9.1.9)}, 
+ pdflang={English}}
+
+\maketitle
+
+\begin{center}
+\Large \textbf{Technological University of Tijuana} \\
+\large Software Development and Management \\
+\vspace{1cm}
+\Large \textbf{Title:} Concepts and Characteristics of Progressive Web Applications (PWAs) \\
+\vspace{1cm}
+\large \textbf{Author:} Jose Eduardo Ruiz Alvarez \\
+\large \textbf{Group:} 10B \\
+\large \textbf{Subject:} Progressive Web Applications \\
+\vspace{1.5cm}
+\large \textbf{Date:} \today
+\end{center}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\label{sec:introduction}
+
+\subsection{Purpose}
+\label{sec:purpose}
+
+The purpose of this document is to define the concepts and characteristics of web and service-oriented applications, native and cross-platform applications, and Progressive Web Apps (PWAs).
+
+\subsection{Scope}
+\label{sec:scope}
+
+This document covers the investigation of the concepts related to web and service-oriented applications, native and cross-platform applications, and PWAs.
+
+\subsection{Definitions, Acronyms, and Abbreviations}
+\label{sec:definitions}
+
+\begin{itemize}
+  \item \textbf{Web Application (Web App):} A software application that runs on a web server and is accessed through a web browser.
+  
+  \item \textbf{Service-Oriented Application:} An application designed and structured to provide services to other applications through a network.
+  
+  \item \textbf{Native Application:} An application developed for a specific platform or device using the native programming language.
+  
+  \item \textbf{Cross-Platform Application:} An application that can run on multiple platforms with a single codebase.
+  
+  \item \textbf{Progressive Web App (PWA):} A type of application software delivered through the web, built using common web technologies including HTML, CSS, and JavaScript, intended to work on any platform that uses a standards-compliant browser.
+\end{itemize}
+
+\subsection{References}
+\label{sec:references}
+
+\begin{enumerate}
+    \item [1] Mozilla Developer Network (MDN). (2023, December 15). 
+    \textit{Aplicaciones Web Progresivas | MDN.} Retrieved from \url{https://developer.mozilla.org/es/docs/Web/Progressive_web_apps}
+      
+    \item [2] IBM. (2022, February 10). 
+    \textit{IBM Documentation: Service-Oriented Architecture (SOA).} Retrieved from \url{https://www.ibm.com/docs/en/rbd/9.5.1?topic=overview-service-oriented-architecture-soa}
+
+    \item [3] Amazon Web Services, Inc. (2023). 
+    \textit{Web Apps vs. Native Apps vs. Hybrid Apps - Difference Between Types of Web and Mobile Applications - AWS.} Retrieved from 
+    \url{https://aws.amazon.com/compare/the-difference-between-web-apps-native-apps-and-hybrid-apps/}
+\end{enumerate}
+
+\subsection{Overview of the Document}
+\label{sec:overview}
+
+This document will explore and define the characteristics of web and service-oriented applications, native and cross-platform applications, and PWAs.
+
+\newpage
+
+\section{Characteristics of Web and Service-Oriented Applications}
+\label{sec:web-service-characteristics}
+
+\subsection{Introduction}
+\label{subsec:web-service-intro}
+
+Web applications are designed for user interaction through web browsers, featuring a user-friendly interface accessible over the internet. They operate in a stateless environment, with each client request being independent. Typically using client-side scripting languages like JavaScript, web apps enhance user interactivity without complete page reloads. Communication between clients and servers primarily occurs through HTTP requests and responses.\vspace{1em}
+
+Service-oriented applications, on the other hand, focus on breaking down functionalities into modular services that communicate with each other. They leverage services that can be independently developed, deployed, and scaled, promoting a more flexible and scalable architecture. Both types of applications aim to provide efficient and reliable solutions, but their architectures and focuses differ based on their intended use cases.
+
+\subsubsection{Web Application Characteristics}
+\label{subsubsec:web-app-characteristics}
+
+\begin{enumerate}
+  \item \textbf{Accessibility:} Web applications should be accessible from various devices and browsers.
+  
+  \item \textbf{User Interface (UI):} Intuitive and responsive UI for seamless user interaction.
+  
+  \item \textbf{Connectivity:} Reliance on internet connectivity for operation.
+  
+  \item \textbf{Security:} Implementation of security measures to protect user data and transactions.
+\end{enumerate}
+
+\subsubsection{Service-Oriented Application Characteristics}
+\label{subsubsec:soa-characteristics}
+
+\begin{enumerate}
+  \item \textbf{Modularity:} Services are modular, providing specific functionalities.
+  
+  \item \textbf{Interoperability:} Services can interact and work with other services.
+  
+  \item \textbf{Loose Coupling:} Minimal dependencies between services.
+  
+  \item \textbf{Scalability:} Easily scalable by adding or removing services.
+\end{enumerate}
+
+\newpage
+
+\section{Characteristics of Native and Cross-Platform Applications}
+\label{sec:native-cross-platform-characteristics}
+
+\subsection{Introduction}
+\label{subsec:native-cross-platform-intro}
+
+Native applications are specifically designed for a particular platform, utilizing platform-specific languages and taking advantage of device-specific features. They offer optimal performance and seamlessly integrate with the operating system, providing a native and consistent user experience. \vspace{1em}
+
+On the other hand, cross-platform applications are developed with a single codebase, making them more cost-effective and efficient in terms of development time. While they aim for a unified user interface, achieving a perfect native look may require additional customization. Cross-platform frameworks provide a streamlined development process, allowing updates and bug fixes to be implemented across multiple platforms simultaneously. Choosing between native and cross-platform development depends on factors such as performance requirements, budget constraints, and the desired level of platform integration.
+
+\subsubsection{Native Application Characteristics}
+\label{subsubsec:native-app-characteristics}
+
+\begin{enumerate}
+  \item \textbf{Platform Optimization:} Developed specifically for a single platform.
+  
+  \item \textbf{Performance:} Leveraging native capabilities for optimal performance.
+  
+  \item \textbf{User Experience:} Tailored user experience according to platform guidelines.
+  
+  \item \textbf{Access to Device Features:} Direct access to device-specific features.
+\end{enumerate}
+
+\subsubsection{Cross-Platform Application Characteristics}
+\label{subsubsec:cross-platform-app-characteristics}
+
+\begin{enumerate}
+  \item \textbf{Code Reusability:} Codebase can be reused across multiple platforms.
+  
+  \item \textbf{Cost-Efficiency:} Development and maintenance costs are generally lower.
+  
+  \item \textbf{Uniformity:} Consistent user experience across different platforms.
+  
+  \item \textbf{Development Time:} Faster development time due to shared codebase.
+\end{enumerate}
+
+\newpage
+
+\section{Characteristics of Progressive Web Apps (PWAs)}
+\label{sec:pwa-characteristics}
+
+\subsection{Introduction}
+\label{subsec:pwa-intro}
+
+Progressive Web Apps (PWAs) embody a modern approach to web development, providing users with a native app-like experience while maintaining the flexibility and accessibility of the web. They are designed to be cross-platform, ensuring a consistent and responsive user interface across various devices. \vspace{1em}
+
+A key feature of PWAs is their ability to function offline or in low-network conditions, facilitated by service workers that enable caching of essential assets. PWAs prioritize fast loading times, responsive design, and secure connections through HTTPS. \vspace{1em}
+
+They deliver app-like interactions, can be added to the home screen, and support push notifications, enhancing user engagement. With automatic updates and linkability, PWAs offer a dynamic and discoverable web experience, bridging the gap between traditional websites and native applications.
+
+\begin{enumerate}
+  \item \textbf{Offline Functionality:} Ability to work offline or with a poor internet connection.
+  
+  \item \textbf{Responsive Design:} Adaptation to various screen sizes and devices.
+  
+  \item \textbf{App-Like Experience:} Providing a native app-like experience within a web browser.
+  
+  \item \textbf{Installation Independent:} Can be used without traditional installation but can be installed for convenience.
+  
+  \item \textbf{Push Notifications:} Capability to send push notifications to users.
+\end{enumerate}
+
+\newpage
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+
+In conclusion, Progressive Web Apps (PWAs) stand at the forefront of modern web development, seamlessly blending the advantages of native applications with the versatility of web technologies. Engineered for cross-platform compatibility, PWAs ensure a consistent and responsive user experience across diverse devices.\vspace{1em}
+
+Noteworthy features, such as offline functionality facilitated by service workers, fast loading times, and secure connections through HTTPS, contribute to their appeal. With app-like interactions, push notification support, and the ability to be added to the home screen, PWAs elevate user engagement to a level comparable to native apps. The automatic update mechanism ensures users have access to the latest version effortlessly. \vspace{1em}
+
+Moreover, PWAs are discoverable through search engines and shareable via URLs, embodying a linkable and dynamic web experience. As the digital landscape evolves, PWAs emerge as a powerful solution, bridging the gap between traditional websites and native applications, and offering a compelling blend of accessibility, responsiveness, and user engagement.
+
+\end{document}
