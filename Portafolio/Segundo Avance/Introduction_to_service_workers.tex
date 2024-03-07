@@ -1,0 +1,142 @@
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[left=2.00cm, right=2.50cm, top=2.50cm, bottom=2.00cm]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{1.0pt}
+\pagestyle{fancy}
+\date{}
+
+\begin{document}
+
+\hypersetup{
+ pdfauthor={Eduardo Ruiz},
+ pdftitle={Introduction to Service Worker},
+ pdfkeywords={Service Worker, Web Development},
+ pdfsubject={Introduction to Service Worker},
+ pdfcreator={Jose Eduardo Ruiz Alvarez}, 
+ pdflang={English}}
+
+\maketitle
+\title
+\begin{center}
+\Large \textbf{Technological University of Tijuana} \\
+\large Software Development and Management \\
+\vspace{1cm}
+\Large \textbf{Title:} Introduction to Service Worker \\
+\vspace{1cm}
+\large \textbf{Author:} Eduardo Ruiz \\
+\large \textbf{Group:} 10B \\
+\large \textbf{Subject:} Progressive Web Applications \\
+\vspace{1.5cm}
+\large \textbf{Date:} \today
+\end{center}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\label{sec:introduction}
+
+\subsection{Purpose}
+\label{sec:purpose}
+
+The purpose of this document is to provide an in-depth exploration of Service Worker, a crucial technology in modern web development. It aims to elucidate the concept, functionalities, implementation, and significance of Service Worker in creating progressive web applications.
+
+\subsection{Scope}
+\label{sec:scope}
+
+This document delves into the core aspects of Service Worker, including its role in web development, its functionalities, practical implementation, and its impact on improving user experience and application performance.
+
+\subsection{Definitions, Acronyms, and Abbreviations}
+\label{sec:definitions}
+
+\begin{itemize}
+  \item \textbf{Service Worker (SW):} A JavaScript file that runs in the background of a web application, separate from the main browser thread.
+\end{itemize}
+
+\subsection{References}
+\label{sec:references}
+
+\begin{enumerate}
+    \item [1] Mozilla Developer Network (MDN). (2023, December 15). 
+    \textit{Service Worker API - Web APIs | MDN.} Retrieved from \url{https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API}
+      
+    \item [2] Google Developers. (n.d.). 
+    \textit{Service Workers: an Introduction | Web Fundamentals.} Retrieved from \url{https://developers.google.com/web/fundamentals/primers/service-workers}
+\end{enumerate}
+
+\subsection{Overview of the Document}
+\label{sec:overview}
+
+This document provides a comprehensive examination of Service Worker, covering its concept, functionalities, implementation, and significance in web development. It aims to offer a detailed understanding of Service Worker and its role in creating efficient and reliable web applications.
+
+\newpage
+
+\section{Concept of Service Worker}
+\label{sec:service-worker-concept}
+
+\subsection{Introduction}
+\label{subsec:sw-concept-intro}
+
+Service Worker is a powerful JavaScript API that enables developers to run script operations in the background of a web application, separate from the main browser thread. It acts as a programmable network proxy, allowing developers to intercept and modify network requests, cache resources, and implement advanced features like push notifications and background synchronization.
+
+\subsection{Functionality}
+\label{subsec:sw-functionality}
+
+Service Workers offer a range of functionalities that enhance the performance, reliability, and user experience of web applications. Some key functionalities include:
+
+\begin{itemize}
+  \item \textbf{Caching:} Service Workers enable developers to cache static assets, such as HTML, CSS, JavaScript, and images, as well as dynamic content, to improve performance and enable offline access.
+  
+  \item \textbf{Background Sync:} Service Workers can synchronize data with the server in the background, even when the web application is not actively being used, ensuring that the application remains up-to-date.
+  
+  \item \textbf{Push Notifications:} Service Workers enable the delivery of push notifications to the user's device, allowing web applications to engage with users even when they are not actively using the application.
+  
+  \item \textbf{Network Interception:} Service Workers can intercept and modify network requests made by the web application, enabling developers to implement custom caching strategies, handle errors gracefully, and provide offline fallbacks.
+\end{itemize}
+
+\subsection{Implementation}
+\label{subsec:sw-implementation}
+
+Implementing a Service Worker involves registering the Service Worker script in the main JavaScript file of the web application using the \texttt{navigator.serviceWorker.register()} method. Once registered, the Service Worker controls various aspects of the web application's behavior, such as intercepting network requests and managing caching strategies.
+
+\subsection{Impact on Web Development}
+\label{subsec:sw-impact}
+
+Service Worker has revolutionized web development by enabling developers to create highly responsive, reliable, and engaging web applications. By leveraging Service Worker's capabilities, developers can:
+
+\begin{itemize}
+  \item \textbf{Improve Performance:} Service Workers enable developers to implement advanced caching strategies, significantly improving the performance and loading times of web applications, especially in low or no network conditions.
+  
+  \item \textbf{Enhance User Experience:} Service Workers enable developers to provide a seamless user experience by enabling offline access, background synchronization, and push notifications, enhancing user engagement and satisfaction.
+  
+  \item \textbf{Enable Progressive Web Apps (PWAs):} Service Workers are a foundational technology for building Progressive Web Apps (PWAs), which combine the best features of web and native applications, including reliability, performance, and engagement.
+  
+  \item \textbf{Increase Reliability:} Service Workers enable developers to implement robust error-handling mechanisms, offline fallbacks, and background synchronization, increasing the reliability and resilience of web applications.
+\end{itemize}
+
+\newpage
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Service Worker is a fundamental technology in modern web development, offering developers powerful tools to enhance the performance, reliability, and user experience of web applications. By enabling advanced caching strategies, background synchronization, push notifications, and network interception, Service Worker empowers developers to create highly responsive, reliable, and engaging web applications. As web technologies continue to evolve, Service Worker remains a crucial component in building progressive web applications that rival native apps in functionality and performance.
+
+\end{document}
