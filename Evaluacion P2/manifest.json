@@ -1,0 +1,21 @@
+{
+    "name": "NFL To-Do List Application",
+    "short_name": "NFL To-Do",
+    "icons": [
+      {
+        "src": "assets/image.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/image.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#eeeeee",
+    "theme_color": "#233183",
+    "display": "standalone"
+  }
+  
