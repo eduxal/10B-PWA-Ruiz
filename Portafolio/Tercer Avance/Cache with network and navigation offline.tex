@@ -1,0 +1,85 @@
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[left=2.00cm, right=2.50cm, top=2.50cm, bottom=2.00cm]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{1.0pt}
+\pagestyle{fancy}
+\date{}
+
+\begin{document}
+
+\title{Cache with Network and Navigation Offline in Progressive Web Applications (PWAs)}
+\hypersetup{
+ pdfauthor={Eduardo Ruiz},
+ pdftitle={Cache with Network and Navigation Offline in PWAs},
+ pdfkeywords={PWA, Cache, Offline, Navigation, Service Worker},
+ pdfsubject={PWAs},
+ pdfcreator={Emacs 26.2 (Org mode 9.1.9)}, 
+ pdflang={English}}
+
+\maketitle
+
+\begin{center}
+\Large \textbf{Technological University of Tijuana} \\
+\large Software Development and Management \\
+\vspace{1cm}
+\Large \textbf{Title:} Cache with Network and Navigation Offline in PWAs \\
+\vspace{1cm}
+\large \textbf{Author:} Eduardo Ruiz \\
+\large \textbf{Group:} 10B \\
+\large \textbf{Subject:} Progressive Web Applications \\
+\vspace{1.5cm}
+\large \textbf{Date:} \today
+\end{center}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{Research on "Cache with Network and Navigation Offline" in PWAs}
+\label{sec:research}
+
+\subsection{Introduction}
+Progressive Web Applications (PWAs) leverage caching strategies to enhance performance and enable offline capabilities. This extended research delves into various techniques for implementing cache with network and navigation offline in PWAs.
+
+\subsection{Cache with Network and Navigation Offline Strategies}
+
+1. \textbf{Service Worker Cache and Fetch API Integration}: PWAs utilize service workers to intercept network requests and cache responses. By integrating the service worker cache with the Fetch API, developers can implement strategies for caching resources while maintaining network connectivity. The service worker intercepts fetch requests, checks the cache for cached responses, and falls back to network requests when offline.
+
+2. \textbf{Cache-First Strategy}: In the cache-first strategy, PWAs prioritize serving resources from the cache. When users access the application offline, the service worker serves cached responses, reducing the reliance on network requests. Developers can configure the service worker to update the cache in the background to ensure that cached resources remain up to date.
+
+3. \textbf{Offline Navigation using Service Worker}: Service workers can cache HTML files and other navigation-related resources to facilitate offline navigation. When users navigate between pages in a PWA offline, the service worker serves cached navigation resources, enabling seamless navigation without network connectivity.
+
+4. \textbf{Dynamic Caching}: Dynamic caching involves caching resources based on user interactions or specific events. For example, when users interact with certain elements in the application, such as images or articles, the service worker can dynamically cache these resources for offline access, enhancing the user experience.
+
+\subsection{Benefits of Cache with Network and Navigation Offline}
+
+- \textbf{Improved Performance}: Caching resources reduces latency and speeds up page loads, resulting in improved performance and user experience.
+- \textbf{Enhanced Offline Experience}: By caching navigation-related resources and content, PWAs provide users with a consistent experience even when offline, increasing user engagement and satisfaction.
+- \textbf{Reduced Dependency on Network}: Implementing cache with network and navigation offline reduces the application's dependency on network connectivity, making it more resilient to network failures and improving reliability.
+
+\subsection{Challenges and Considerations}
+
+- \textbf{Cache Invalidation}: Ensuring that cached resources remain up to date and synchronized with the server poses a challenge. Developers must implement cache invalidation strategies to periodically update or refresh cached content.
+- \textbf{Cache Size Management}: Managing the size of the cache is essential to prevent excessive storage usage on the user's device. Developers should implement cache size management techniques to limit the amount of data stored in the cache and optimize storage usage.
+
+\subsection{Conclusion}
+Implementing cache with network and navigation offline in PWAs is essential for delivering fast, reliable, and engaging user experiences. By leveraging service workers and caching strategies, developers can optimize PWAs for performance, offline usage, and resilience to network failures.
+
+\end{document}
